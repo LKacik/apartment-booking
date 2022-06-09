@@ -3,6 +3,8 @@ from data import print_rental_date
 
 
 '''function that allows you to preview the booking, displays the first name, last name, date of rental'''
+
+
 def preview_the_booking():
     with open('room.json', 'r', encoding='utf-8') as read_file:
         room_reservation_dict = json.load(read_file)
