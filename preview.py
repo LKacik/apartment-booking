@@ -8,11 +8,13 @@ from data import print_rental_date
 def preview_the_booking():
     with open('room.json', 'r', encoding='utf-8') as read_file:
         room_reservation_dict = json.load(read_file)
-    search_name = input("Proszę podać nazwisko wynajmującego: ")
+    search_last_name = input("Proszę podać nazwisko wynajmującego: ")
     for index_number in range(1, len(room_reservation_dict) + 1):
-        if search_name == room_reservation_dict.get(str(index_number))['nazwisko']:
+        condition_fulfillment_counter = 0
+        if search_last_name == room_reservation_dict.get(str(index_number))['nazwisko']:
+            condition_fulfillment_counter += 1
             index_values = room_reservation_dict.get(str(index_number))
             print(f"imie: {index_values['imie']} \nnazwisko: {index_values['nazwisko']} \ndata wynajmu:"
                   f" {print_rental_date(index_values['data wynajmu'][:])}")
-        else:
-            print("Brak nazwiska w bazie wynajmujących.")
+    if condition_fulfillment_counter == 0:
+        print('Brak nazwiska w bazie wynajmujących.')
