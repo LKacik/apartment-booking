@@ -14,7 +14,10 @@ def preview_the_booking():
         if search_last_name == room_reservation_dict.get(str(index_number))['nazwisko']:
             condition_fulfillment_counter += 1
             index_values = room_reservation_dict.get(str(index_number))
+            phone_number = index_values['nr telefonu']
             print(f"imie: {index_values['imie']} \nnazwisko: {index_values['nazwisko']} \ndata wynajmu:"
-                  f" {print_rental_date(index_values['data wynajmu'][:])}")
-    if condition_fulfillment_counter == 0:
-        print('Brak nazwiska w bazie wynajmujących.')
+                  f" {print_rental_date(index_values['data wynajmu'][:])} \nnumer telefonu:"
+                  f" {'-'.join(phone_number[i:i+3] for i in range(0, len(phone_number), 3))} \nilość łózek: {index_values['ilosc lozek']}\nuwagi:"
+                  f" {index_values['uwagi']}")
+        if condition_fulfillment_counter == 0:
+           print('Brak nazwiska w bazie wynajmujących.')
