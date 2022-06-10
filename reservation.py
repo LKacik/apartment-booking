@@ -21,9 +21,15 @@ def room_reservation():
         last_name = input('Nazwisko wynajmującego: ')
         date_from = input('Datę rozpoczęcia wynajmu(RRRR, MM, DD): ')
         date_to = input('Datę zakończenia wynajmu(RRRR, MM, DD): ')
+        phone_number = input('Nr telefonu wynajmującego: ')
+        number_beds = input('Ilość łóżek: ')
+        notes = input('Uwagi: ')
         temp_dict['imie'] = first_name
         temp_dict['nazwisko'] = last_name
         temp_dict['data wynajmu'] = [date_from, date_to]
+        temp_dict['nr telefonu'] = int(phone_number)
+        temp_dict['uwagi'] = notes
+        temp_dict['ilosc lozek'] = number_beds
         counter = int(counter)
         counter += 1
         room_reservation_dict[str(counter)] = temp_dict
