@@ -27,9 +27,9 @@ def room_reservation():
         temp_dict['imie'] = first_name
         temp_dict['nazwisko'] = last_name
         temp_dict['data wynajmu'] = [date_from, date_to]
-        temp_dict['nr telefonu'] = int(phone_number)
-        temp_dict['uwagi'] = notes
+        temp_dict['nr telefonu'] = phone_number
         temp_dict['ilosc lozek'] = number_beds
+        temp_dict['uwagi'] = notes
         counter = int(counter)
         counter += 1
         room_reservation_dict[str(counter)] = temp_dict
