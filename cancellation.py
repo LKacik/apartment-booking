@@ -16,7 +16,7 @@ def cancellation_room_reservation():
             condition_fulfillment_counter = 0
             if first_name == room_reservation_dict.get(str(index_number))['imie'] and last_name == room_reservation_dict.get(str(index_number))['nazwisko'] and date_from == room_reservation_dict.get(str(index_number))['data wynajmu'][0]:
                 condition_fulfillment_counter += 1
-                keys_reservation = ['imie', 'nazwisko', 'data wynajmu']
+                keys_reservation = ['imie', 'nazwisko', 'data wynajmu', 'nr telefonu', 'ilosc lozek', 'uwagi']
                 for key_reservation in keys_reservation:
                     room_reservation_dict[str(index_number)][key_reservation] = None
                 print('Rezerwacja, anulowana pomyślnie.')
