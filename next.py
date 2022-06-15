@@ -19,6 +19,7 @@ def next_reservation():
         except TypeError:
             continue
         date_for = datetime.strptime(date_for, "%Y, %m, %d").date()
+        condition_fulfillment_counter += 1
         if counter == 0:
             date_temp = date_for
             temp_index_value = index_values
@@ -28,7 +29,8 @@ def next_reservation():
             temp_index_value = index_values
             phone_number = temp_index_value['nr telefonu']
         counter += 1
-
+    if condition_fulfillment_counter == 0:
+        print('Brak rezerwacji.')
     print(f"imie: {temp_index_value['imie']} \nnazwisko: {temp_index_value['nazwisko']} \ndata wynajmu:"
           f" {print_rental_date(temp_index_value['data wynajmu'][:])} \nnumer telefonu:"
           f" {'-'.join(phone_number[i:i + 3] for i in range(0, len(phone_number), 3))} \nilość łózek: {temp_index_value['ilosc lozek']}\nuwagi:"
