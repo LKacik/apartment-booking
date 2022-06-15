@@ -35,7 +35,3 @@ def next_reservation():
           f" {print_rental_date(temp_index_value['data wynajmu'][:])} \nnumer telefonu:"
           f" {'-'.join(phone_number[i:i + 3] for i in range(0, len(phone_number), 3))} \nilość łózek: {temp_index_value['ilosc lozek']}\nuwagi:"
           f" {temp_index_value['uwagi']} \n")
-
-
-
-next_reservation()
