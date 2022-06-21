@@ -35,4 +35,5 @@ if __name__ == '__main__':
             preview_the_booking()
         elif option == 5:
             print('Wyłączenie programu.')
-            print('Błędny wybór. Proszę wybrać cyfry z przedziału 1 - 4.')
+        else:
+            print('Błędny wybór. Proszę wybrać cyfry z przedziału 1 - 5.')
