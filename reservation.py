@@ -11,7 +11,6 @@ def room_reservation():
     if os.path.exists('room.json'):
         with open('room.json', 'r', encoding='utf-8') as read_file:
             room_reservation_dict_temp = json.load(read_file)
-            print(room_reservation_dict_temp)
             counter = list(room_reservation_dict_temp.keys())[-1]
     room_reservation_dict = dict()
     while True:

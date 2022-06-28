@@ -19,7 +19,8 @@ def preview_the_booking():
                 phone_number = index_values['nr telefonu']
                 print(f"imie: {index_values['imie']} \nnazwisko: {index_values['nazwisko']} \ndata wynajmu:"
                     f" {print_rental_date(index_values['data wynajmu'][:])} \nnumer telefonu:"
-                    f" {'-'.join(phone_number[i:i+3] for i in range(0, len(phone_number), 3))} \nilość łózek: {index_values['ilosc lozek']}\nuwagi:"
+                    f" {'-'.join(phone_number[i:i+3] for i in range(0, len(phone_number), 3))} \nilość łózek:"
+                    f" {index_values['ilosc lozek']}\nuwagi:"
                     f" {index_values['uwagi']} \n")
         if condition_fulfillment_counter == 0:
             print('Brak nazwiska w bazie wynajmujących.')
