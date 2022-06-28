@@ -1,5 +1,8 @@
-from tkinter import Tk
+from tkinter import Tk, Button
 
+
+def click_action(button):
+    button.config(text=f"funkcja reservation")
 
 root = Tk()
 root.title('Rezerwacja Mieszkania')
