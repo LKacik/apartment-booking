@@ -3,6 +3,7 @@
  - [General info](#general-info)
  - [What motivated me?](#what-motivated-me)
  - [Features](#features)
+ - [Technologies & Documentation](#technologies--documentation)
 
 
 ### General info
@@ -38,3 +39,13 @@ A program that facilitates the management of an apartment reservation. It is use
 - [ ] Create an interface, tkinter or kivy or PyQT
 </details>
 
+### Technologies & Documentation
+<details>
+<summary>Click here to see <b>Technologies...</b>!</summary>
+<b>Technologies & Documentation:</b>
+
+- [Python 3](https://docs.python.org/3/)
+- [JSON](https://www.json.org/json-en.html)
+</details>
+
+#### LKacik CEp6
