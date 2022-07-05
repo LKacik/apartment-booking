@@ -9,7 +9,7 @@
 ### General info
 <details>
 <summary>Click here to see general information about <b>Project</b>!</summary>
-<b>Reservation of an apartment</b>.
+<b>Apartment booking</b>.
   
 A program that facilitates the management of an apartment reservation. It is used to save / edit / delete / view reservations. The information that may be included in the reservation is: name and surname of the lessor, date from to, number of beds, telephone number and comments.
 </details>
